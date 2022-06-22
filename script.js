@@ -130,7 +130,7 @@ function fetchPokemon(){
         document.location.reload(true);
     }
     else{
-        fetch('http://pokeapi.co/api/v2/pokemon?limit=30')
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=30')
         .then(response => response.json())
         .then(function(allpokemon){
             allpokemon.results.forEach(function(pokemon){
